@@ -49,7 +49,7 @@ header p{
     margin-top: 5px;
 }
 
-header > img{
+header a > img{
     margin-top: 20px;
 }
 
@@ -170,4 +170,71 @@ footer p{
     font-size: 2.0rem;
     font-weight: 600;
     color: var(--white);
+}
+
+@media screen and (min-width: 700px){
+    body{
+        
+        
+    }
+    header{
+        width: 1440px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+    }
+
+    header h1{
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+
+    header h2{
+        font-size: 5.8rem;
+        margin-left: 8vw;
+        margin-bottom: 0vh;
+    }
+
+    header p{
+        font-size: 3.2rem;
+        margin-left: 8vw;
+        margin-bottom: 18vh;
+    }
+
+    header a img{
+        margin-bottom: 3vh;
+        margin-left: 8vw;
+    }
+
+    section:first-child div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1218px;
+    }
+
+    section:first-child article{
+        width: 366px;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    section:first-child img{
+        width: 97px;
+    }
+
+    section:first-child h3{
+        font-size: 3.5rem;
+        margin-bottom: 8px;
+    }
+
+    section:first-child p{
+        font-size: 2.0rem;
+        width: 321px;
+    }
 }
