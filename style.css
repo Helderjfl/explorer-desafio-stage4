@@ -125,10 +125,14 @@ section:last-child div{
     position: relative;
 }
 
-section:last-child div img{
+section:last-child div:first-child img{
     position: absolute;
     top: 23px;
     left: 14px;
+}
+
+section:last-child > img{
+    display: none;
 }
 
 section textarea{
@@ -173,10 +177,6 @@ footer p{
 }
 
 @media screen and (min-width: 700px){
-    body{
-        
-        
-    }
     header{
         width: 1440px;
         position: relative;
@@ -236,5 +236,28 @@ footer p{
     section:first-child p{
         font-size: 2.0rem;
         width: 321px;
+    }
+
+    section:last-child{
+        height: 612px;
+        display: flex;
+        padding: 0px;
+    }
+
+    section:last-child > div:last-child{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    section:last-child > img{
+        display: block;
+    }
+
+    section:last-child > div{
+        width: 595px;
+    }
+
+    section:last-child div{
+        width: 595px;
     }
 }
